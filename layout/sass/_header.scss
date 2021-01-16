@@ -1,7 +1,62 @@
 .header {
     padding-top: 50px;
+
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        &__menu {
+            display: flex;
+            font-family: 'Avenir-Medium';
+            transition: font-weight .2s linear;
+            &-item {
+                margin-left: 40px;
+
+                .link--active {
+                    color: $main-blue;
+                    font-family: 'Avenir-Heavy';
+                }
+            }
+
+            &-link {
+                color: $main-gray;
+                font-size: 16px;
+                min-width: 40px;
+                &:hover {
+                    color: $main-blue;
+                    font-family: 'Avenir-Heavy';
+                    transition: all .2s linear;
+                }
+            }
+        }
+
+    }
+
+    &__btn {
+        position: relative;
+        padding: 17px 70px 15px 30px;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+        border-radius: 50px;
+        transition: all .2s linear;
+
+        &:hover {
+            box-shadow: 8px 8px 8px rgba(75, 93, 104, 0.1);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 14px;
+            right: 30px;
+            top: 21px;
+            background-image: url('../../assets/images/dest/right-arrow.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 }

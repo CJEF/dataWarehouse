@@ -1,3 +1,5 @@
+@import "_fonts.scss";
+@import "_vars.scss";
 @import "_header.scss";
 @import "_intro.scss";
 @import "_descr.scss";
@@ -13,6 +15,7 @@ body {
     margin: 0;
     font-family: "Avenir", sans-serif;
     font-size: 18px;
+    font-style: normal;
     padding: 0;
     color: #4B5D68;
 }   
@@ -38,6 +41,8 @@ h6 {
 *:before,
 *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -48,6 +53,8 @@ button {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
+    font-family: 'Avenir-Heavy';
 }
 
 ul {
@@ -60,4 +67,8 @@ ul {
     padding: 0 15px;
     max-width: 1150px;
     margin: 0 auto;
+}
+
+.text {
+    font-family: 'Avenir-Medium';
 }
