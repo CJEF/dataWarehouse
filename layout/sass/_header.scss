@@ -44,6 +44,7 @@
 
         &:hover {
             box-shadow: 8px 8px 8px rgba(75, 93, 104, 0.1);
+            background-color: rgba($color: #9d5bf3, $alpha: 0.5)
         }
 
         &::after {

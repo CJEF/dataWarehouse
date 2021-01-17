@@ -7,6 +7,8 @@
     <title>Data Warehouse</title>
     <link rel="stylesheet" href="./css/app.min.css/app.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </head>
 
 <body>
@@ -39,11 +41,16 @@
     <!-- intro -->
     <section class="intro">
         <div class="container intro__container">
-            <h1 class="intro__title">Save your data storage here.</h1>
-            <p class="intro__text text">Data Warehouse is a data storage area that has been
-                tested for security, so you can store your data here
-                safely but not be afraid of being stolen by others.</p>
-            <button class="intro__btn">Learn more</button>
+            <div class="intro__content">
+                <h1 class="intro__title">Save your data storage here.</h1>
+                <p class="intro__text text">Data Warehouse is a data storage area that has been
+                    tested for security, so you can store your data here
+                    safely but not be afraid of being stolen by others.</p>
+                <button class="intro__btn">Learn more</button>
+            </div>
+            <div class="intro__img">
+                <img src="./assets/images/dest/intro.png" alt="" class="intro__img-picture">
+            </div>
         </div>
     </section>
     <!-- intro -->
@@ -56,7 +63,8 @@
                 </div>
                 <div class="descr__wrapper-content">
                     <h2 class="descr__title title">We are a high-level data storage bank</h2>
-                    <p class="descr__text">The place to store various data that you can access at any time through the
+                    <p class="descr__text text">The place to store various data that you can access at any time through
+                        the
                         internet and where you can carry it.
                         This very flexible storage area has a high level of security. To enter into your own data you
                         mustenter the password that you created when you registered in this Data Warehouse. </p>
@@ -67,46 +75,62 @@
     <!-- description -->
     <!-- features -->
     <section class="features">
-        <div class="container features__wrapper">
+        <div class="container">
             <h2 class="features__title title">Features</h2>
             <p class="features__text text">Some of the features and advantages that we provide for those of you who
                 store data in this Data Warehouse.</p>
             <div class="features__content">
                 <ul class="features__list">
                     <li class="features__item">
-                        <div class="features__content">
-                            <h3 class="features__content-title">Search Data</h3>
-                            <p class="features__content-text">Don’t worry if your data is very large, the Data Warehoue
-                                provides a search engine, which is useful for making it easier to find data effectively
-                                saving time.</p>
-                            <button class="feaatures__content-btn btn-reset">Learn more</button>
+                        <div class="features__item-inner">
+                            <div class="features__img">
+                                <img src="./assets/images/dest/features-1.png" alt="">
+                            </div>
+                            <div class="features__content">
+                                <h3 class="features__content-title">Search Data</h3>
+                                <p class="features__content-text">Don’t worry if your data is very large, the Data
+                                    Warehoue
+                                    provides a search engine, which is useful for making it easier to find data
+                                    effectively
+                                    saving time.</p>
+                                <button class="features__content-btn btn-reset">Learn more</button>
+                            </div>
                         </div>
                     </li>
                     <li class="features__item">
+                        <div class="features__img">
+                            <img src="./assets/images/dest/features-2.png" alt="">
+                        </div>
                         <div class="features__content">
                             <h3 class="features__content-title">24 Hours Access</h3>
                             <p class="features__content-text">Access is given 24 hours a full morning to night and
                                 meet again in the morning, giving you comfort when
                                 you need data when urgent.</p>
-                            <button class="feaatures__content-btn btn-reset">Learn more</button>
+                            <button class="features__content-btn btn-reset">Learn more</button>
                         </div>
                     </li>
                     <li class="features__item">
+                        <div class="features__img">
+                            <img src="./assets/images/dest/features-3.png" alt="">
+                        </div>
                         <div class="features__content">
                             <h3 class="features__content-title">Print Out</h3>
                             <p class="features__content-text">Print out service gives you convenience if someday
                                 you need print data, just edit it all and just print it.</p>
-                            <button class="feaatures__content-btn btn-reset">Learn more</button>
+                            <button class="features__content-btn btn-reset">Learn more</button>
                         </div>
                     </li>
                     <li class="features__item">
+                        <div class="features__img">
+                            <img src="./assets/images/dest/features-4.png" alt="">
+                        </div>
                         <div class="features__content">
                             <h3 class="features__content-title">Security Code</h3>
                             <p class="features__content-text">Data Security is one of our best facilities. Allows for
                                 your files
                                 to be safer. The file can be secured with a code or password that
                                 you created, so only you can open the file.</p>
-                            <button class="feaatures__content-btn btn-reset">Learn more</button>
+                            <button class="features__content-btn btn-reset">Learn more</button>
                         </div>
                     </li>
                 </ul>
@@ -116,26 +140,31 @@
     <!-- features -->
     <!-- testimonials -->
     <section class="testimonials">
-        <div class="testimonials__container">
+        <div class="testimonials__container container">
             <div class="testimonials__container-inner">
                 <h2 class="testimonials__container-title title">Testimonials</h2>
-                <div class="testimonials__container-slider">
+                <div id="testimonials__container-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-1.jpg" alt="John testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-1.png" alt="John testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">John Fang</h3>
                                     <span class="user-prof">wordfaang.com</span>
                                     <p class="user-text text">Suspendisse ultrices at diam lectus nullam.
-                                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu
+                                        pulvinar
                                         aenean nam laoreet nulla.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-2.jpg" alt="Jeny testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-2.png" alt="Jeny testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">Jeny Doe</h3>
                                     <span class="user-prof">wordfaang.com</span>
@@ -147,7 +176,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-3.jpg" alt="John testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-3.png" alt="John testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">William</h3>
                                     <span class="user-prof">Web Designer</span>
@@ -156,22 +187,66 @@
                                         pulvinaraenean nam laoreet nulla.</p>
                                 </div>
                             </div>
+
+
+                            <!-- </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-inner">
+                                    <img src="assets/images/dest/user-1.jpg" alt="John testimonial" class="user-avatar">
+                                    <div class="swiper-slide-content">
+                                        <h3 class="user-name">John Fang</h3>
+                                        <span class="user-prof">wordfaang.com</span>
+                                        <p class="user-text text">Suspendisse ultrices at diam lectus nullam.
+                                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                                            aenean nam laoreet nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-inner">
+                                    <img src="assets/images/dest/user-2.jpg" alt="Jeny testimonial" class="user-avatar">
+                                    <div class="swiper-slide-content">
+                                        <h3 class="user-name">Jeny Doe</h3>
+                                        <span class="user-prof">wordfaang.com</span>
+                                        <p class="user-text text">Suspendisse ultrices at diam lectus nullam.
+                                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu
+                                            pulvinaraenean nam laoreet nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-inner">
+                                    <img src="assets/images/dest/user-3.jpg" alt="John testimonial" class="user-avatar">
+                                    <div class="swiper-slide-content">
+                                        <h3 class="user-name">William</h3>
+                                        <span class="user-prof">Web Designer</span>
+                                        <p class="user-text text">Suspendisse ultrices at diam lectus nullam.
+                                            Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu
+                                            pulvinaraenean nam laoreet nulla.</p>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-1.jpg" alt="John testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-1.png" alt="John testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">John Fang</h3>
                                     <span class="user-prof">wordfaang.com</span>
                                     <p class="user-text text">Suspendisse ultrices at diam lectus nullam.
-                                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                                        Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu
+                                        pulvinar
                                         aenean nam laoreet nulla.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-2.jpg" alt="Jeny testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-2.png" alt="Jeny testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">Jeny Doe</h3>
                                     <span class="user-prof">wordfaang.com</span>
@@ -183,7 +258,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="swiper-slide-inner">
-                                <img src="assets/images/dest/user-3.jpg" alt="John testimonial" class="user-avatar">
+                                <div class="swiper-img">
+                                    <img src="assets/images/dest/user-3.png" alt="John testimonial" class="user-avatar">
+                                </div>
                                 <div class="swiper-slide-content">
                                     <h3 class="user-name">William</h3>
                                     <span class="user-prof">Web Designer</span>
@@ -285,8 +362,6 @@
     </footer>
     <!-- footer -->
 
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

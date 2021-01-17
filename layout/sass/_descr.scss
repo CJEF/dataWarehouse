@@ -1,0 +1,26 @@
+.descr {
+    padding: 100px 0 150px;
+
+    &__wrapper {
+        display: flex;
+        background-color: rgba(240, 99, 184, 0.15);
+        border-radius: 50px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            padding: 100px 90px 60px 75px;
+
+
+        }
+    }
+
+    &__title {
+        max-width: 475px;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        max-width: 475px;
+    }
+}

@@ -1,0 +1,100 @@
+.features {
+    &__img {
+        margin-right: 30px;
+        position: absolute;
+        left: -24%;
+        top: 30%;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        margin: 0 auto;
+        max-width: 585px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        max-width: 50%;
+        padding: 80px 70px 50px 172px;
+        background-image: url('../../assets/images/dest/features-back-1.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 45px;
+        // &-inner {
+        //     // padding-left: 30px;
+        // }
+
+
+        // border-bottom: 100px solid #68C9BA;
+        // border-left: 50px solid transparent;
+        // // opacity: 0.1;
+        // border-radius: 20px;
+    }
+
+    &__item:nth-child(2) {
+        background-image: url('../../assets/images/dest/features-back-2.svg');
+    }
+
+    &__item:nth-child(3) {
+        background-image: url('../../assets/images/dest/features-back-2.svg');
+    }
+
+    &__content {
+        min-height: 250px;
+        position: relative;
+
+        &-title {
+            font-family: 'HelveticaRegular';
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 20px;
+            color: $main-blue;
+        }
+
+        &-text {
+            font-family: "Avenir-Roman";
+            max-width: 220px;
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            padding: 15px 55px 14px 15px;
+            position: absolute;
+            transition: all .2s ease-in;
+            border-radius: 20px;
+        }
+        &-btn:hover {
+            background-color: rgba($color: #fd69e9, $alpha: 0.2)
+        }
+    }
+
+    &__content-btn::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 14px;
+        top: 18px;
+        right: 17px;
+        text-align: center;
+        background-image: url('../../assets/images/dest/right-arrow.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

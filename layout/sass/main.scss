@@ -71,4 +71,20 @@ ul {
 
 .text {
     font-family: 'Avenir-Medium';
+    color: $main-gray;
+    font-size: 18px;
+    line-height: 160%;
 }
+
+.title {
+    font-family: "HelveticaBold";
+    font-size: 40px;
+    color: $main-blue;
+}
+
+/* swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }

@@ -1,18 +1,12 @@
     .intro {
-        padding: 130px 0 100px;
+        padding: 130px 0 130px;
         position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            background-image: url(../../assets/images/dest/intro.png);
-            background-position: 100% 100% ;
-            background-repeat: no-repeat;
-            right: 220px;
-            top: 40px;
-            width: 885px;
-            height: 100%;
-            // down: 50px;
+
+        &__container {
+            display: flex;
+            position: relative;
         }
+
         &__title {
             font-family: 'HelveticaBold';
             font-weight: bold;
@@ -22,10 +16,12 @@
             margin-bottom: 50px;
             line-height: 1.1;
         }
+
         &__text {
             max-width: 380px;
             margin-bottom: 50px;
         }
+
         &__btn {
             background-color: $pink;
             border-radius: 50px;
@@ -33,10 +29,19 @@
             padding: 16px 37px 15px;
             transition: all .2s ease-in-out;
             border: 3px solid $pink;
+
             &:hover {
                 border: 3px solid $pink;
                 background-color: white;
                 color: $pink;
             }
+        }
+
+        &__img {
+            position: absolute;
+            bottom: -140px;
+            right: -130px;
+
+            &-picture {}
         }
     }
